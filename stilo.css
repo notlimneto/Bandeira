@@ -1,0 +1,111 @@
+
+:root{
+  --vermelho: rgb(206, 76, 24);
+  --burkina: rgb(255, 202, 26);
+}
+
+.palau{
+  position: relative;
+  border-radius: 5px;
+  margin: auto;
+  width: 256.0px;
+  height: 144.0px;
+  background-color:aqua;
+  
+}
+.yellow{
+  position: absolute;
+  border-radius: 50%;
+  background-color: yellow;
+  height:95px; width:95px;
+  margin: 30px 40px;
+}
+
+.madagascar{
+  position: relative;
+  margin: auto;
+  background-color: white;
+  border: 0.5px;
+  border-style:solid;
+  border-radius: 5px;
+  width: 256px; height: 144px;
+}
+
+.cores{
+  position: absolute;
+  width: 65%; height: 50%;
+  right: 0px;
+}
+#verde{
+  background-color: green;
+}
+#laranja{
+  background-color: var(--vermelho);
+  bottom: 0px;
+}
+
+#bangladesh{
+  background-color: green;
+}
+
+#red{
+  background-color: var(--vermelho);
+}
+
+
+.burkina{
+  position: relative;
+  border-radius: 5px;
+  margin: auto;
+  width: 256.0px;
+  height: 144.0px;
+  background-color: green;
+}
+  
+.baixo{
+  position: absolute;
+  z-index:1;
+  background-color: var(--vermelho);
+  height: 50%; width: 100%;
+}
+
+.star{
+  position: absolute;
+  margin: 60px 100px;
+  display: block;
+  color: var(--burkina);
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid transparent;
+  border-bottom: 21px solid var(--burkina);
+  border-left: 30px solid transparent;
+  transform: rotate(35deg);
+}
+.star::before{
+  border-bottom: 24px solid var(--burkina);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -13.5px;
+  left: -19.5px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+
+.star::after{
+  position: absolute;
+  display: block;
+  color: var(--burkina);
+  top: 0.9px;
+  left: -31.5px;
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid transparent;
+  border-bottom: 21px solid var(--burkina);
+  border-left: 30px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
